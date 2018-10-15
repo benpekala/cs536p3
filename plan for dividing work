@@ -1,0 +1,4 @@
+sunday 10/14
+Ben: add rules and actions for type ::= void in cdull.cup, add appropriate unparse method in ast.java, try to run it
+Peter: add rules and actions for type ::= void in cdull.cup, add appropriate unparse method in ast.java, try to run it
+Both: read through project specification more, try to get better understanding of project, etc.
