@@ -1,0 +1,25 @@
+sunday 10/28
+
+THINGS TO DO
+office hours tomorrow. see notes bellow
+
+- write more of program. probably do this seperate so that
+we can test with what we have now and then add
+^^ write unparse methods separate
+^^ write input file. maybe have it so that we pull some off this as we test them
+^^ write .cup changes seperately
+
+For all 4 of below, write associated .cup and ast.java rules
+- struct declarations
+- functions
+- simple expressions
+- statements
+
+Base plan
+
+
+questions for office hours
+How exactly do we run parser ? Are we doing it right ? What should
+print based on our current input and code
+
+Why is our makefile failing ??
