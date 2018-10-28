@@ -7,19 +7,20 @@ office hours tomorrow. see notes bellow
 we can test with what we have now and then add
 ^^ write unparse methods separate
 ^^ write input file. maybe have it so that we pull some off this as we test them
-^^ write .cup changes seperately
+^^ write .cup changes separately
 
 For all 4 of below, write associated .cup and ast.java rules
-- struct declarations
-- functions
-- simple expressions
-- statements
+- struct declarations - done we think
+- functions - peter
+- simple expressions - ben
+- statements - leave for later. think of relevant questions
 
 Base plan
 tonight/tomorrow morning before OH
 write input file to test the rules that we have written
+upload to github current version
 do above work for 4 things ^^ in separate text documents
-read over program and files again to understand it
+read over program and files again to understand it** figure out more questions to ask
 OH -
 ask the questions below. Pretty much we need to learn how to do this, we need to
 learn how to start adding rules and stuff. Have him help us to run the parser on the
