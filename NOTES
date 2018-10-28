@@ -17,11 +17,15 @@ For all 4 of below, write associated .cup and ast.java rules
 
 Base plan
 tonight/tomorrow morning before OH
+write input file to test the rules that we have written
 do above work for 4 things ^^ in separate text documents
 read over program and files again to understand it
 OH -
 ask the questions below. Pretty much we need to learn how to do this, we need to
-learn how to start adding rules and stuff
+learn how to start adding rules and stuff. Have him help us to run the parser on the
+simple stuff that we have written so far**
+
+** so far we have written code to check for bool and void and struct definitions
 
 other things
 set up telemetry (plug in so that we can write together)
