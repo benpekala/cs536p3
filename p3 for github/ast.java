@@ -6,7 +6,7 @@ import java.util.*;
 // represents a Mini program.
 //
 // Internal nodes of the tree contain pointers to children, organized
-// either in a list (for nodes that may have a variable number of 
+// either in a list (for nodes that may have a variable number of
 // children) or as a fixed set of fields.
 //
 // The nodes for literals and ids contain line and character number
@@ -65,7 +65,7 @@ import java.util.*;
 //         UnaryMinusNode
 //         NotNode
 //       BinaryExpNode       ExpNode ExpNode
-//         PlusNode     
+//         PlusNode
 //         MinusNode
 //         TimesNode
 //         DivideNode
@@ -92,7 +92,7 @@ import java.util.*;
 // (3) Internal nodes with fixed numbers of kids:
 //        ProgramNode,     VarDeclNode,     FnDeclNode,     FormalDeclNode,
 //        StructDeclNode,  FnBodyNode,      StructNode,     AssignStmtNode,
-//        PostIncStmtNode, PostDecStmtNode, ReadStmtNode,   WriteStmtNode   
+//        PostIncStmtNode, PostDecStmtNode, ReadStmtNode,   WriteStmtNode
 //        IfStmtNode,      IfElseStmtNode,  WhileStmtNode,  RepeatStmtNode,
 //        CallStmtNode,    ReturnStmtNode,  DotAccessNode,   CallExpNode,
 //        UnaryExpNode,    BinaryExpNode,   UnaryMinusNode, NotNode,
@@ -106,7 +106,7 @@ import java.util.*;
 // ASTnode class (base class for all other kinds of nodes)
 // **********************************************************************
 
-abstract class ASTnode { 
+abstract class ASTnode {
     // every subclass must provide an unparse operation
     abstract public void unparse(PrintWriter p, int indent);
 
@@ -174,6 +174,7 @@ class FnBodyNode extends ASTnode {
     }
 
     public void unparse(PrintWriter p, int indent) {
+
     }
 
     // 2 kids
@@ -323,7 +324,7 @@ class StructNode extends TypeNode {
 
     public void unparse(PrintWriter p, int indent) {
     }
-	
+
 	// 1 kid
     private IdNode id;
 }
@@ -439,7 +440,7 @@ class WhileStmtNode extends StmtNode {
         declList = dlist;
         stmtList = slist;
     }
-	
+
     public void unparse(PrintWriter p, int indent) {
     }
 
@@ -455,7 +456,7 @@ class RepeatStmtNode extends StmtNode {
         declList = dlist;
         stmtList = slist;
     }
-	
+
     public void unparse(PrintWriter p, int indent) {
     }
 
