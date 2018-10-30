@@ -79,8 +79,8 @@ non terminal DeclNode         decl;
 non terminal VarDeclNode      varDecl;
 non terminal TypeNode         type;
 non terminal IdNode           id;
- 
- 
+
+
 /* NOTE: Add precedence and associativity declarations here */
 
 
@@ -118,10 +118,13 @@ varDecl         ::= type:t id:i SEMICOLON
 type            ::= INT
                 {: RESULT = new IntNode();
                 :}
+                | VOID {: RESULT = new VoidNode();
+                :}
+                | BOOL{: RESULT = new BoolNode();
+                :}
                 ;
 
 id              ::= ID:i
                 {: RESULT = new IdNode(i.linenum, i.charnum, i.idVal);
                 :}
                 ;
-				
