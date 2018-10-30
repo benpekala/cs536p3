@@ -23,14 +23,14 @@ varDecl         ::= type id SEMICOLON
 
 fnDecl          ::= type id formals fnBody
                 ;
-                
+
 structDecl      ::= STRUCT id LCURLY structBody RCURLY SEMICOLON
                 ;
-                
+
 structBody      ::= structBody varDecl
                 | varDecl
                 ;
-                
+
 formals         ::= LPAREN RPAREN
                 | LPAREN formalsList RPAREN
                 ;
@@ -65,7 +65,7 @@ stmt            ::= assignExp SEMICOLON
 
 assignExp       ::= loc ASSIGN exp
                 ;
-                
+
 exp             ::= assignExp
                 | exp PLUS exp
                 | exp MINUS exp
@@ -111,4 +111,3 @@ loc             ::= id
 
 id              ::= ID
                 ;
-
