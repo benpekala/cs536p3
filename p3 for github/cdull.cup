@@ -108,10 +108,17 @@ declList        ::= declList:dl decl:d
 decl            ::= varDecl:v
                 {: RESULT = v;
                 :}
+                | structDecl:s {: RESULT = s;
+                :}
                 ;
 
 varDecl         ::= type:t id:i SEMICOLON
                 {: RESULT = new VarDeclNode(t, i, VarDeclNode.NOT_STRUCT);
+                :}
+                ;
+
+StructDeclNode  ::= STRUCT LCURLY id:i structBody:s RCURLY SEMICOLON
+                {: RESULT = new StructDeclNode(i, new DeclListNode(b));
                 :}
                 ;
 
